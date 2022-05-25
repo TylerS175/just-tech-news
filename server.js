@@ -18,10 +18,10 @@ const sess = {
   })
 };
 
-app.use(session(sess));
-
-
 const app = express();
+
+
+app.use(session(sess));
 const PORT = process.env.PORT || 3001;
 
 app.engine('handlebars', hbs.engine);
